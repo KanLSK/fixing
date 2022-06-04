@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Odia&family=Commissioner&family=Grape+Nuts&family=Inter&family=Kumbh+Sans:wght@400;700&family=League+Spartan&family=Overpass&family=Poppins&family=Rubik&family=Space+Mono&family=Square+Peg&family=Ubuntu&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-screen h-screen p-0">
+  <div class=" h-[33.5em] md:h-[27em] bg-no-repeat bg-top bg-cover w-screen rounded-b-[60px]" style="background-image: url('./images/rainbow.svg')">
+    <nav class="w-screen h-[5em] flex">
+        <div class="lg:pl-[10%] hidden w-3/5 md:flex items-center">
+            <ul class="hidden md:flex items-center">
+                <li>
+                    <div class="flex items-center relative top-[-2px] mx-4">
+                        <img src="./images/logo.svg" alt="logo" class="scale-75">
+                        <a href="/" class="text-white font-bold text-2xl">Andy</a>
+                    </div>
+                </li>
+                <li><a href="/" class="text-white font-[poppins] mx-4 pl-8">Home</a></li>
+                <li><a href="/" class="text-white font-[poppins] mx-4">About</a></li>
+                <li><a href="/" class="text-white font-[poppins] mx-4">Program</a></li>
+                <li><a href="/" class="text-white font-[poppins] mx-4">Tutorial</a></li>
+            </ul>
+        </div>
+        <div class=" hidden md:flex items-center w-2/5 justify-around font-[poppins]">
+            <div class="">
+                <button class="mx-2 p-2 bg-white rounded-md text-sm">
+                    My Account
+                </button>
+                <button class="mx-2 p-2 bg-yellow-400 rounded-md text-white text-sm">
+                    Create Account
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden flex items-center relative justify-between w-screen">
+            <div class="flex items-center relative top-[-2px] mx-4">
+                <img src="./images/logo.svg" alt="logo" class="scale-75">
+                <a href="/" class="text-white font-bold text-2xl">Andy</a>
+            </div>
+            <button class="relative mr-4" id="mobile-menu-button">
+                <img src="./images/Menu.svg" class="">
+            </button>
+        </div>
+    </nav>
+    <!-- dropdown hamburger -->
+    <div class="hidden bg-no-repeat bg-top bg-cover absolute w-screen h-screen top-0 transition-transform duration-500 z-10 overflow-hidden md:hidden" id="mobile-menu" style="background-image: url('./images/rainbow.svg')">
+        <div class="grid place-items-center w-scren h-screen">
+            <ul class="space-y-8 text-center">
+                <button id="closebtn"><img src="./images/close.svg" class="absolute right-0 mr-4 top-0 mt-8 scale-150"></button>
+                <div class="flex items-center justify-center relative top-0 mt-2">
+                    <img src="./images/logo.svg" alt="logo" class="scale-75">
+                    <a href="/" class="text-white font-bold text-2xl">Andy</a>
+                </div>
+                <hr>
+                <li>
+                    <a href="/" class="text-white font-[poppins] mx-4">Home</a>
+                </li>
+                <hr class="w-[80vw]">
+                <li><a href="/" class="text-white font-[poppins] mx-4">About</a></li>
+                <hr>
+                <li><a href="/" class="text-white font-[poppins] mx-4">Program</a></li>
+                <hr>
+                <li><a href="/" class="text-white font-[poppins] mx-4">Tutorial</a></li>
+                <hr>
+            </ul>
+        </div>
+    </div>
+     <!--first part -->
+    <div class="grid justify-center mt-10">
+        <p class="text-4xl text-center text-white font-bold font-[poppins] flex flex-wrap mx-2 justify-center">Manage your daily task today with simple</p>
+        <p class="text-sm text-center text-white font-[poppins] flex flex-wrap px-10  mx-auto mt-4">Task-Andy is built for every member if your software team to plan, track, and release great software.</p>
+        <div class="w-screen flex justify-center mt-4">
+            <div class="w-auto">
+                <button><img src="./images/Button-apple.svg" class="bg-white scale-90 rounded-md"></button>
+                <button><img src="./images/Button-google.svg" class="bg-white scale-90 rounded-md"></button>
+            </div>
+        </div>
+        <div class="pic w-screen flex justify-center mt-4 pb-2">
+            <img src="./images/Mobile Screen.svg" class="max-w-[370px]">
+        </div>
+    </div>
+  </div>
+  <div class="w-screen grid justify-center relative mt-[7em]">
+    <p class="text-slate-500 font-[poppins] text-sm text-center">Thousands of teams around the world are building software with Shortcut</p>
+    <div class="mt-4">
+        <img src="./images/company.svg">
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
